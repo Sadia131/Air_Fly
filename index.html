@@ -112,15 +112,48 @@
                             </div>
                         </div>
                     </div>
-                    <button id="confirmationBtn" class="btn-style">Book Now</button>
+                    <button id="confirmationBtn" class="btn-style" onclick="confirmBooking()">Book Now</button>
                 </div>
                 </div>
+
+                <!---------------------------------------Confirmation Section------------------------------------>
+                <div class="confirmation booking-form" id="confirmation" style="display: none"> 
+                
+                <div class="card border=0" style="width: 10cm;" >
+                    <img src="images/images.png" class="card-img"  alt="">
+                    <div class="card-body">
+                        <h5 style="text-align: center;">Booking Confirmed</h5>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Departure</th>
+                                    <td>:</td>
+                                    <td id="confirmation-departure"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Return</th>
+                                    <td>:</td>
+                                    <td id="confirmation-return"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Total Cost</th>
+                                    <td>:</td>
+                                    <td id="confirmation-cost"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button type="button" class="btn-style">Go to Payment</button>
+
+                    </div>
+                </div>
+            </div>
+            
                 </section>
-                </main>
-                <script src="scripts.js"></script>
-                <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            </main>
+            <script src="scripts.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script> -->
+        crossorigin="anonymous"></script>
                 </body>
 
 </html>

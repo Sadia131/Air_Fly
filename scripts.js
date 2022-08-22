@@ -37,3 +37,9 @@ function getInputValue(ticket) {
     return ticketCount;
 }
 
+function confirmBooking(){
+    document.getElementById("buy-ticket").style.display="none";
+    document.getElementById("confirmation").style.display="block";
+    
+        
+}

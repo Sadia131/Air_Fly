@@ -38,8 +38,23 @@ function getInputValue(ticket) {
 }
 
 function confirmBooking(){
+    var From = document.getElementById('from').value;
+    var To = document.getElementById('to').value;
+    var Departure = document.getElementById('departure').value;
+    var Return = document.getElementById('return').value;
+    var Cost = document.getElementById('grand-total').innerText;
+    if(From == null ||From == "" && To == null || To == "" && Departure == null || Departure == "" && Return == null || Return == "" && Cost <= 0){
+        alert("You must fill all required field!!");
+    }
+    else{
     document.getElementById("buy-ticket").style.display="none";
     document.getElementById("confirmation").style.display="block";
+    document.getElementById('confirmation-from').innerText = From;
+    document.getElementById('confirmation-to').innerText = To;
+    document.getElementById('confirmation-departure').innerText = Departure;
+    document.getElementById('confirmation-return').innerText = Return;
+    document.getElementById('confirmation-cost').innerText = Cost;
+    }
     
         
 }
